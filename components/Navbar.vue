@@ -26,7 +26,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <UHeader>
+  <UHeader class="opacity-95">
     <template #left>
       <h1 class="font-bold">Juan Losauro</h1>
     </template>

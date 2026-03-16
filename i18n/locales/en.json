@@ -5,6 +5,24 @@
     "contact": "Contact"
   },
 
+  "footer": {
+    "text": "Made with Nuxt 3",
+    "back": "Back to top"
+  },
+
+  "projects": {
+    "sentiment": {
+      "title": "Sentiment",
+      "subtitle": "Sentiment Analysis App",
+      "description": "Development of a fullstack application for sentiment analysis on social networks."
+    },
+    "recipedia": {
+      "title": "Recipedia",
+      "subtitle": "Recipe Social Network",
+      "description": "Development of a social network for recipes (mobile)."
+    }
+  },
+
   "tooltip": {
     "github": "Check my projects out on GitHub",
     "linkedin": "Let's connect on LinkedIn"
