@@ -6,22 +6,20 @@ const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: $t("about_me"),
-    to: "/docs/getting-started",
-    active: route.path.startsWith("/docs/getting-started"),
+    label: $t("navbar.aboutme"),
+    to: "#about",
   },
   {
-    label: $t("projects"),
-    to: "/docs/components",
-    active: route.path.startsWith("/docs/components"),
+    label: $t("navbar.projects"),
+    to: "#projects",
   },
   {
-    label: $t("contact"),
-    to: "https://github.com/nuxt/ui/releases",
+    label: $t("navbar.contact"),
+    to: "#contact",
   },
   {
     label: "CV",
-    to: "/cv.pdf",
+    to: "/losaurojuan_cv.pdf",
     target: "_blank",
   },
 ]);
@@ -38,7 +36,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     <template #right>
       <UColorModeButton />
 
-      <UTooltip text="Check my projects out on GitHub">
+      <UTooltip :text="$t('tooltip.github')">
         <UButton
           color="neutral"
           variant="ghost"
@@ -49,11 +47,11 @@ const items = computed<NavigationMenuItem[]>(() => [
         />
       </UTooltip>
 
-      <UTooltip text="Follow me on LinkedIn">
+      <UTooltip :text="$t('tooltip.linkedin')">
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://www.linkedin.com/in/juanlosauro/"
+          to="https://www.linkedin.com/in/losauro-juan-6a2745299/"
           target="_blank"
           icon="i-simple-icons-linkedin"
           aria-label="LinkedIn"

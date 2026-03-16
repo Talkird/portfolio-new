@@ -1,8 +1,21 @@
 {
-  "about_me": "Sobre mí",
-  "projects": "Proyectos",
-  "contact": "Contacto",
-  "greeting1": "Hola, soy",
-  "greeting2": "Desarrollador de Argentina",
-  "about_me_text": "Soy estudiante de Ingeniería en Informática con 21 años, actualmente cursando el quinto año de la carrera en la Universidad Argentina de la Empresa, con un 80% de las materias aprobadas. Tengo un fuerte interés en el desarrollo de software, y estoy buscando una oportunidad laboral para aplicar y expandir mis conocimientos.\n\nA lo largo de mis estudios, he adquirido habilidades sólidas en tecnologías como React, Spring Boot y otras herramientas clave. Estoy motivado por participar en proyectos desafiantes que me permitan crecer como profesional en el ámbito del desarrollo de software."
+  "navbar": {
+    "aboutme": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+
+  "tooltip": {
+    "github": "Mira mis proyectos en GitHub",
+    "linkedin": "Conectemos en LinkedIn"
+  },
+
+  "toast": {
+    "clipboard": "EMail copiado al clipboard"
+  },
+
+  "about": {
+    "headline": "Fullstack Dev & Estudiante de Ingeniería en Informática",
+    "description": "Soy un desarrollador fullstack apasionado con experiencia en React, Vue y Spring Boot. Actualmente estoy cursando la carrera de Ingeniería en Informática y busco integrarme a equipos de desarrollo para aplicar y expandir mis conocimientos en proyectos reales."
+  }
 }
