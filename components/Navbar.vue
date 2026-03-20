@@ -28,7 +28,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 <template>
   <UHeader class="opacity-95">
     <template #left>
-      <h1 class="font-bold text-nowrap">Juan Losauro</h1>
+      <h1 class="hidden font-bold text-nowrap md:block">Juan Andrés Losauro</h1>
     </template>
 
     <UNavigationMenu :items="items" orientation="horizontal" />

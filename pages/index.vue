@@ -66,7 +66,7 @@ const links = ref<ButtonProps[]>([
     </h1>
 
     <div
-      class="mx-auto grid max-w-xl grid-cols-1 gap-8 md:max-w-3xl md:grid-cols-2 md:gap-6 lg:grid-cols-2"
+      class="mx-4 grid max-w-xl grid-cols-1 gap-8 md:mx-8 md:max-w-3xl md:grid-cols-2 md:gap-6 lg:grid-cols-2"
     >
       <ProjectCard
         :title="$t('projects.sentiment.title')"
