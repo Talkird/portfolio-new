@@ -15,7 +15,7 @@ const links = ref<ButtonProps[]>([
   },
   {
     label: "losaurojuan@gmail.com",
-    class: "rounded-full px-5 py-2.5",
+    class: "rounded-full px-5 py-2.5 cursor-pointer",
     color: "neutral",
     variant: "soft",
     target: "_blank",

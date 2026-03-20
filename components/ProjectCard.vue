@@ -29,7 +29,16 @@ const props = defineProps({
         <h2 class="text-lg font-bold">
           {{ props.subtitle }}
         </h2>
-        <p>{{ props.description }}</p>
+        <p>
+          {{ props.description }} Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptatibus dignissimos laboriosam, vel error,
+          perferendis sed autem assumenda perspiciatis maiores quia maxime ipsa
+          delectus ut! Facere maiores commodi eligendi sunt cumque. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Excepturi dignissimos
+          laboriosam quisquam corporis illo voluptas. Eveniet voluptatem, eaque
+          veritatis velit quod atque! Possimus eius placeat eos omnis numquam
+          repellendus labore.
+        </p>
         <UButton
           v-if="props.projectUrl"
           :href="props.projectUrl"
@@ -44,7 +53,12 @@ const props = defineProps({
 
       <template #footer>
         <div class="flex gap-2">
-          <UBadge variant="soft" v-for="badge in badges" :key="badge">
+          <UBadge
+            color="neutral"
+            variant="outline"
+            v-for="badge in badges"
+            :key="badge"
+          >
             {{ badge }}
           </UBadge>
         </div>

@@ -9,7 +9,7 @@
     </ULink>
     <div class="inline-flex items-center gap-2">
       <p class="text-muted">{{ $t("footer.text") }}</p>
-      <UIcon class="text-primary" name="material-icon-theme:vue" />
+      <Icon class="text-primary" name="material-icon-theme:vue" />
     </div>
   </div>
 </template>
