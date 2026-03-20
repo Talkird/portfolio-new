@@ -6,7 +6,7 @@
   },
 
   "footer": {
-    "text": "Hecho con Nuxt 3",
+    "text": "Hecho con Nuxt 4",
     "back": "Volver arriba"
   },
 
@@ -33,7 +33,7 @@
   },
 
   "about": {
-    "headline": "Fullstack Dev & Estudiante de Ingeniería en Informática",
+    "headline": "Fullstack Dev y Estudiante de Ingeniería en Informática",
     "description": "Soy un desarrollador fullstack apasionado con experiencia en React, Vue y Spring Boot. Actualmente estoy cursando la carrera de Ingeniería en Informática y busco integrarme a equipos de desarrollo para aplicar y expandir mis conocimientos en proyectos reales."
   }
 }

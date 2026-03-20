@@ -3,21 +3,6 @@ import type { ButtonProps } from "@nuxt/ui";
 import { motion } from "motion-v";
 const toast = useToast();
 
-const sentimentBadges = [
-  "Electron",
-  "React",
-  "Selenium",
-  "Tailwind",
-  "Firebase",
-];
-const recipediaBadges = [
-  "Expo",
-  "React Native",
-  "Spring Boot",
-  "tailwindcss",
-  "PostgreSQL",
-];
-
 const links = ref<ButtonProps[]>([
   {
     label: "GitHub",
@@ -73,59 +58,43 @@ const links = ref<ButtonProps[]>([
 
   <USeparator />
 
-  <div
-    id="projects"
-    class="mx-auto min-h-screen max-w-md scroll-mt-24 md:max-w-3xl"
-  >
+  <div id="projects" class="mx-auto mb-12 max-w-md scroll-mt-24 md:max-w-3xl">
     <h1
-      class="text-primary my-6 text-center text-3xl font-bold underline underline-offset-8 md:my-12 md:text-5xl"
+      class="text-primary my-14 text-center text-3xl font-bold underline underline-offset-8 md:my-12 md:text-5xl"
     >
       {{ $t("navbar.projects") }}
     </h1>
-    <motion.div
-      :initial="{ opacity: 0.5, y: -10 }"
-      :while-in-view="{ opacity: 1, y: 0 }"
-      :transition="{ duration: 0.5, ease: 'easeOut' }"
-      class="mx-auto grid max-w-xl grid-cols-1 gap-6 md:max-w-3xl md:grid-cols-2"
+
+    <div
+      class="mx-auto grid max-w-xl grid-cols-1 gap-8 md:max-w-3xl md:grid-cols-2 md:gap-6 lg:grid-cols-2"
     >
-      <motion.div
-        :while-hover="{ scale: 1.02 }"
-        :transition="{ duration: 0.15 }"
-      >
-        <UCard variant="subtle">
-          <template #header>
-            <h1 class="text-primary text-xl font-bold md:text-2xl">
-              {{ $t("projects.sentiment.title") }}
-            </h1>
-          </template>
+      <ProjectCard
+        :title="$t('projects.sentiment.title')"
+        :subtitle="$t('projects.sentiment.subtitle')"
+        :description="$t('projects.sentiment.description')"
+        :badges="['Expo', 'React Native', 'Spring Boot', 'PostgreSQL']"
+        img="/projects/sentiment.png"
+        project-url="https://github.com/Talkird/sentiment-client"
+      />
 
-          <div class="flex flex-col gap-2">
-            <img
-              src="https://images.unsplash.com/photo-1761839257469-96c78a7c2dd3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
-              alt=""
-            />
-            <h2 class="text-lg font-bold">
-              {{ $t("projects.sentiment.subtitle") }}
-            </h2>
-            <p>{{ $t("projects.sentiment.description") }}</p>
-            <UButton class="w-fit" variant="subtle" icon="i-lucide-github">
-              GitHub
-            </UButton>
-          </div>
+      <ProjectCard
+        :title="$t('projects.recipedia.title')"
+        :subtitle="$t('projects.recipedia.subtitle')"
+        :description="$t('projects.recipedia.description')"
+        :badges="['Expo', 'React Native', 'Spring Boot', 'PostgreSQL']"
+        img="/projects/recipedia.png"
+        project-url="https://github.com/Talkird/recipeapp-frontend"
+      />
+    </div>
+  </div>
 
-          <template #footer>
-            <div class="flex gap-2">
-              <UBadge
-                variant="soft"
-                v-for="badge in sentimentBadges"
-                :key="badge"
-              >
-                {{ badge }}
-              </UBadge>
-            </div>
-          </template>
-        </UCard>
-      </motion.div>
-    </motion.div>
+  <USeparator />
+
+  <div id="contact" class="mx-auto mb-12 max-w-md scroll-mt-24 md:max-w-3xl">
+    <h1
+      class="text-primary my-14 text-center text-3xl font-bold underline underline-offset-8 md:my-12 md:text-5xl"
+    >
+      {{ $t("navbar.contact") }}
+    </h1>
   </div>
 </template>

@@ -7,6 +7,9 @@
       class="text-primary hover:text-primary-600 hover:underline"
       >{{ $t("footer.back") }}
     </ULink>
-    <p class="text-muted">{{ $t("footer.text") }}</p>
+    <div class="inline-flex items-center gap-2">
+      <p class="text-muted">{{ $t("footer.text") }}</p>
+      <UIcon class="text-primary" name="material-icon-theme:vue" />
+    </div>
   </div>
 </template>
