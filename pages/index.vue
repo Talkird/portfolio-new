@@ -72,7 +72,7 @@ const links = ref<ButtonProps[]>([
         :title="$t('projects.sentiment.title')"
         :subtitle="$t('projects.sentiment.subtitle')"
         :description="$t('projects.sentiment.description')"
-        :badges="['Expo', 'React Native', 'Spring Boot', 'PostgreSQL']"
+        :badges="['React', 'Electron', 'Selenium', 'Firebase']"
         img="/projects/sentiment.png"
         project-url="https://github.com/Talkird/sentiment-client"
       />

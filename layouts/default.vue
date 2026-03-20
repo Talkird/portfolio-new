@@ -1,8 +1,8 @@
 <template>
-  <UApp>
+  <UApp class="flex min-h-screen flex-col">
     <Navbar />
 
-    <UMain>
+    <UMain class="flex flex-1 flex-col">
       <NuxtPage />
     </UMain>
 

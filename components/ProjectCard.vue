@@ -19,25 +19,18 @@ const props = defineProps({
   >
     <UCard variant="subtle" class="h-full">
       <template #header>
-        <h1 class="text-primary text-2xl font-bold md:text-3xl">
+        <h1 class="text-xl font-bold md:text-2xl">
           {{ props.title }}
         </h1>
       </template>
 
       <div class="flex flex-col gap-2">
         <img :src="props.img" :alt="props.title" />
-        <h2 class="text-lg font-bold">
+        <h2 class="text-lg font-semibold md:text-xl">
           {{ props.subtitle }}
         </h2>
         <p>
-          {{ props.description }} Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptatibus dignissimos laboriosam, vel error,
-          perferendis sed autem assumenda perspiciatis maiores quia maxime ipsa
-          delectus ut! Facere maiores commodi eligendi sunt cumque. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Excepturi dignissimos
-          laboriosam quisquam corporis illo voluptas. Eveniet voluptatem, eaque
-          veritatis velit quod atque! Possimus eius placeat eos omnis numquam
-          repellendus labore.
+          {{ props.description }}
         </p>
         <UButton
           v-if="props.projectUrl"
@@ -47,13 +40,14 @@ const props = defineProps({
           variant="subtle"
           icon="i-lucide-github"
         >
-          GitHub
+          GitHub Repo
         </UButton>
       </div>
 
       <template #footer>
         <div class="flex gap-2">
           <UBadge
+            class="text-nowrap"
             color="neutral"
             variant="outline"
             v-for="badge in badges"
