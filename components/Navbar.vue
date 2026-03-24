@@ -51,7 +51,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://www.linkedin.com/in/losauro-juan-6a2745299/"
+          to="https://www.linkedin.com/in/juanlosauro/"
           target="_blank"
           icon="i-simple-icons-linkedin"
           aria-label="LinkedIn"
