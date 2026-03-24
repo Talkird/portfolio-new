@@ -11,6 +11,8 @@
   },
 
   "projects": {
+    "private": "Private Repository",
+
     "sentiment": {
       "title": "Sentiment",
       "subtitle": "Sentiment Analysis App",

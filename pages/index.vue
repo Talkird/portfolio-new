@@ -74,7 +74,6 @@ const links = ref<ButtonProps[]>([
         :description="$t('projects.sentiment.description')"
         :badges="['React', 'Electron', 'Selenium', 'Firebase']"
         img="/projects/sentiment.png"
-        project-url="https://github.com/Talkird/sentiment-client"
       />
 
       <ProjectCard
@@ -86,15 +85,5 @@ const links = ref<ButtonProps[]>([
         project-url="https://github.com/Talkird/recipeapp-frontend"
       />
     </div>
-  </div>
-
-  <USeparator />
-
-  <div id="contact" class="mx-auto mb-12 max-w-md scroll-mt-24 md:max-w-3xl">
-    <h1
-      class="text-primary my-14 text-center text-3xl font-bold underline underline-offset-8 md:my-12 md:text-5xl"
-    >
-      {{ $t("navbar.contact") }}
-    </h1>
   </div>
 </template>

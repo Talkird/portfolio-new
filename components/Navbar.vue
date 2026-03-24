@@ -13,10 +13,7 @@ const items = computed<NavigationMenuItem[]>(() => [
     label: $t("navbar.projects"),
     to: "#projects",
   },
-  {
-    label: $t("navbar.contact"),
-    to: "#contact",
-  },
+
   {
     label: "CV",
     to: "/losaurojuan_cv.pdf",

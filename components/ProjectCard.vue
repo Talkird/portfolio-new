@@ -42,6 +42,15 @@ const props = defineProps({
         >
           GitHub Repo
         </UButton>
+        <UButton
+          v-else-if="!props.projectUrl"
+          class="w-fit"
+          variant="subtle"
+          color="neutral"
+          icon="i-lucide-x"
+        >
+          {{ $t("projects.private") }}
+        </UButton>
       </div>
 
       <template #footer>
