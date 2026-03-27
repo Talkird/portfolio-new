@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
 
-const props = defineProps({
-  badges: { type: Array<string>, required: true },
-  title: { type: String, required: true },
-  subtitle: { type: String, required: true },
-  description: { type: String, required: true },
-  img: { type: String, required: true },
-  projectUrl: { type: String, required: false },
-});
+const props = defineProps<{
+  badges: string[];
+  title: string;
+  subtitle: string;
+  description: string;
+  img: string;
+  projectUrl?: string;
+}>();
 </script>
 
 <template>
