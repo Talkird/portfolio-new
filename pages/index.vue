@@ -19,16 +19,8 @@ const links = ref<ButtonProps[]>([
     color: "neutral",
     variant: "soft",
     target: "_blank",
+    to: "mailto:losaurojuan@gmail.com",
     trailingIcon: "i-lucide-mail",
-
-    onClick: () => {
-      toast.add({
-        title: $t("toast.clipboard"),
-        icon: "i-lucide-clipboard-copy",
-        duration: 2000,
-      });
-      navigator.clipboard.writeText("losaurojuan@gmail.com");
-    },
   },
 ]);
 </script>
