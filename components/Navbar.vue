@@ -2,7 +2,6 @@
 import type { NavigationMenuItem } from "@nuxt/ui";
 import { en, es } from "@nuxt/ui/locale";
 const { locale, setLocale } = useI18n();
-const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
@@ -13,7 +12,14 @@ const items = computed<NavigationMenuItem[]>(() => [
     label: $t("navbar.projects"),
     to: "#projects",
   },
-
+  {
+    label: $t("navbar.skills"),
+    to: "#skills",
+  },
+  {
+    label: $t("navbar.education"),
+    to: "#education",
+  },
   {
     label: "CV",
     to: "/losaurojuan_cv.pdf",
@@ -23,9 +29,11 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <UHeader class="opacity-95">
+  <UHeader>
     <template #left>
-      <h1 class="hidden font-bold text-nowrap md:block">Juan Andrés Losauro</h1>
+      <span class="hidden font-bold text-nowrap md:block">
+        Juan Andrés Losauro
+      </span>
     </template>
 
     <UNavigationMenu :items="items" orientation="horizontal" />
@@ -37,7 +45,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://github.com/nuxt/ui"
+          to="https://github.com/Talkird"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"

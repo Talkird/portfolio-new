@@ -1,27 +1,55 @@
 {
+  "nuxtSiteConfig": {
+    "name": "Juan Andrés Losauro",
+    "description": "Estudiante avanzado de Ingeniería en Informática y Analista graduado, con fuerte enfoque en el diseño y desarrollo de arquitecturas full-stack."
+  },
+
   "navbar": {
     "aboutme": "Sobre mí",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "skills": "Skills",
+    "education": "Educación"
   },
 
   "footer": {
-    "text": "Hecho con Vue",
     "back": "Volver arriba"
   },
 
   "projects": {
     "private": "Repositorio Privado",
-
+    "live": "Ver sitio",
+    "alertafuego": {
+      "title": "AlertaFuego",
+      "subtitle": "Detección Temprana de Incendios Forestales",
+      "description": "Sistema de detección temprana y monitoreo de incendios forestales en Argentina desarrollado con un dashboard en NuxtJS, un backend en FastAPI y almacenamiento de datos geoespaciales con PostGIS. Utiliza una red neuronal convolucional para procesar imágenes satelitales."
+    },
     "sentiment": {
       "title": "Sentiment",
       "subtitle": "Aplicación de Análisis de Sentimientos",
-      "description": "Desarrollo de una aplicación fullstack de análisis de sentimientos en las redes sociales. "
+      "description": "Desarrollo de una aplicación desktop con React y Electron para el análisis de sentimientos en las redes sociales, utilizando Selenium para la automatización y recolección de datos, y Firebase como backend."
+    }
+  },
+
+  "skills": {
+    "technologies": "Lenguajes y Tecnologías",
+    "databases": "Bases de Datos",
+    "tools": "Infraestructura y Herramientas",
+    "languages": "Idiomas",
+    "agile": "Metodologías ágiles",
+    "english": "Inglés (C2 - Certificado CAE Grade A)",
+    "spanish": "Español (Nativo)"
+  },
+
+  "education": {
+    "engineering": {
+      "title": "Ingeniería en Informática",
+      "date": "Fecha de graduación esperada: Diciembre 2026",
+      "description": "Universidad Argentina de la Empresa · 80% de las materias aprobadas"
     },
-    "recipedia": {
-      "title": "Recipedia",
-      "subtitle": "Red Social de Recetas",
-      "description": "Desarrollo de una red social de recetas (mobile)."
+    "analyst": {
+      "title": "Analista en Informática",
+      "date": "Graduado en 2024",
+      "description": "Universidad Argentina de la Empresa"
     }
   },
 
@@ -30,12 +58,9 @@
     "linkedin": "Conectemos en LinkedIn"
   },
 
-  "toast": {
-    "clipboard": "EMail copiado al clipboard"
-  },
-
   "about": {
-    "headline": "Fullstack Dev y Estudiante de Ingeniería en Informática",
-    "description": "Soy un desarrollador fullstack apasionado con experiencia en React, Vue y Spring Boot. Actualmente estoy cursando la carrera de Ingeniería en Informática y busco integrarme a equipos de desarrollo para aplicar y expandir mis conocimientos en proyectos reales."
+    "headline": "Estudiante avanzado de Ingeniería en Informática y Analista en Informática",
+    "description": "Fuerte enfoque en el diseño y desarrollo de arquitecturas full-stack. Orientado a la resolución analítica de problemas y al aprendizaje constante, motivado por participar en proyectos desafiantes que me permitan crecer como profesional.",
+    "cv": "Descargar CV"
   }
 }

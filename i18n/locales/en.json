@@ -1,27 +1,55 @@
 {
+  "nuxtSiteConfig": {
+    "name": "Juan Andrés Losauro",
+    "description": "Advanced Computer Engineering student and graduate IT Analyst with a strong focus on the design and development of full-stack architectures."
+  },
+
   "navbar": {
     "aboutme": "About me",
     "projects": "Projects",
-    "contact": "Contact"
+    "skills": "Skills",
+    "education": "Education"
   },
 
   "footer": {
-    "text": "Made with Vue",
     "back": "Back to top"
   },
 
   "projects": {
     "private": "Private Repository",
-
+    "live": "Visit site",
+    "alertafuego": {
+      "title": "AlertaFuego",
+      "subtitle": "Early Wildfire Detection",
+      "description": "Early detection and monitoring system for wildfires in Argentina, built with a NuxtJS dashboard, a FastAPI backend and geospatial data storage with PostGIS. It uses a convolutional neural network to process satellite imagery."
+    },
     "sentiment": {
       "title": "Sentiment",
       "subtitle": "Sentiment Analysis App",
-      "description": "Development of a fullstack application for sentiment analysis on social networks."
+      "description": "Development of a desktop application with React and Electron for sentiment analysis on social networks, using Selenium for automation and data collection, and Firebase as the backend."
+    }
+  },
+
+  "skills": {
+    "technologies": "Languages & Technologies",
+    "databases": "Databases",
+    "tools": "Infrastructure & Tools",
+    "languages": "Languages",
+    "agile": "Agile methodologies",
+    "english": "English (C2 - CAE Certificate, Grade A)",
+    "spanish": "Spanish (Native)"
+  },
+
+  "education": {
+    "engineering": {
+      "title": "Computer Engineering",
+      "date": "Expected graduation: December 2026",
+      "description": "Universidad Argentina de la Empresa · 80% of courses passed"
     },
-    "recipedia": {
-      "title": "Recipedia",
-      "subtitle": "Recipe Social Network",
-      "description": "Development of a social network for recipes (mobile)."
+    "analyst": {
+      "title": "IT Analyst",
+      "date": "Graduated in 2024",
+      "description": "Universidad Argentina de la Empresa"
     }
   },
 
@@ -30,12 +58,9 @@
     "linkedin": "Let's connect on LinkedIn"
   },
 
-  "toast": {
-    "clipboard": "Email copied to clipboard!"
-  },
-
   "about": {
-    "headline": "Fullstack Dev & Computer Engineering Student",
-    "description": "I am a passionate fullstack developer experienced in React, Vue, and Spring Boot. I am currently pursuing a degree in Computer Engineering and I am eager to apply my skills in real-world projects, looking for opportunities to grow within a professional team."
+    "headline": "Advanced Computer Engineering Student & IT Analyst",
+    "description": "Strong focus on the design and development of full-stack architectures. Driven by analytical problem-solving and continuous learning, motivated to take part in challenging projects that allow me to grow as a professional.",
+    "cv": "Download CV"
   }
 }

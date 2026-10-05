@@ -7,56 +7,66 @@ const props = defineProps<{
   subtitle: string;
   description: string;
   img: string;
-  projectUrl?: string;
+  liveUrl?: string;
 }>();
 </script>
 
 <template>
   <motion.div
-    :initial="{ opacity: 0, y: -20 }"
+    :initial="{ opacity: 0, y: 20 }"
     :while-in-view="{ opacity: 1, y: 0 }"
+    :in-view-options="{ once: true }"
     :transition="{ duration: 0.5, ease: 'easeOut' }"
   >
     <UCard variant="subtle" class="h-full">
       <template #header>
-        <h1 class="text-xl font-bold md:text-2xl">
+        <h3 class="text-xl font-bold md:text-2xl">
           {{ props.title }}
-        </h1>
+        </h3>
       </template>
 
       <div class="flex flex-col gap-2">
-        <img :src="props.img" :alt="props.title" />
-        <h2 class="text-lg font-semibold md:text-xl">
+        <NuxtImg
+          :src="props.img"
+          :alt="props.title"
+          format="webp"
+          loading="lazy"
+          sizes="100vw md:384px"
+          width="768"
+          height="432"
+          class="aspect-video w-full rounded-md object-cover object-top"
+        />
+        <h4 class="text-lg font-semibold md:text-xl">
           {{ props.subtitle }}
-        </h2>
+        </h4>
         <p>
           {{ props.description }}
         </p>
         <UButton
-          v-if="props.projectUrl"
-          :href="props.projectUrl"
+          v-if="props.liveUrl"
+          :to="props.liveUrl"
           target="_blank"
           class="w-fit"
           variant="subtle"
-          icon="i-lucide-github"
+          trailing-icon="i-lucide-external-link"
         >
-          GitHub Repo
+          {{ $t("projects.live") }}
         </UButton>
-        <UButton
-          v-else-if="!props.projectUrl"
+        <UBadge
+          v-else
           class="w-fit"
-          variant="subtle"
           color="neutral"
-          icon="i-lucide-x"
+          variant="subtle"
+          icon="i-lucide-lock"
         >
           {{ $t("projects.private") }}
-        </UButton>
+        </UBadge>
       </div>
 
       <template #footer>
-        <div class="flex gap-2">
+        <div class="flex flex-wrap gap-2">
           <UBadge
-            class="text-nowrap"
+            class="font-mono text-nowrap"
             color="neutral"
             variant="outline"
             v-for="badge in badges"
